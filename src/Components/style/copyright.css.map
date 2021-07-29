@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECPJ,OAAO;EDQnB,OAAO,EAAE,SAAS;EAClB,KAAK,ECLI,OAAO;CDOnB",
+    "sources": [
+        "../../scss/shared/copyright.scss",
+        "../../scss/utils/_settings.scss"
+    ],
+    "names": [],
+    "file": "copyright.css"
+}

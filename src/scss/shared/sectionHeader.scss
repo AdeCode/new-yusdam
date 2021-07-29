@@ -1,0 +1,29 @@
+@import "../utils/settings";
+
+.section{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #ffffff;
+    padding: 20px 20px;
+    margin-bottom:50px;
+    text-align: center;
+    background-image: url('/src/Components/images/marcus-medium.jpg');
+    background-position:center center;
+    background-attachment: fixed;
+
+    &-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+
+    &-subTitle{
+        font-size: 1.1rem;
+    }
+}
+

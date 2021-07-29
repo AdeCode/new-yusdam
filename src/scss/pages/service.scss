@@ -1,0 +1,82 @@
+@import '../utils/settings';
+
+.service-section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #ffffff;
+    color:#000000;
+   
+    a, a:hover, a:focus, a:active{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &-row{
+        display: flex;
+        height:auto;
+        padding: 10vh 0;
+        flex-direction: column;
+        
+
+        &-1{
+            display: flex;
+            height:auto;
+            width: 80%;
+            margin: 0 auto;
+
+            @include medium{
+                flex-direction: column;
+            }
+            
+            @include large{
+                padding: 10px 0;
+            }
+            
+            &-col{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $primary-color;
+                height: auto;
+                margin: 10px;
+                padding: 20px;
+                transition: all 1s;
+    
+                @include medium{
+    
+                }
+    
+                @include large{
+                    flex-grow: 1;
+                }
+    
+                &-img{
+                    height: 40vh;
+                    align-content: center;
+                    width: 100%;
+                    color: #f00946;
+                    margin-bottom: 5px;
+                }
+                
+                p, h2{
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+
+            &-col:hover{
+                border: 1px solid #f00946;
+                box-shadow: 0 4px 8px 0 #04091b, 0 6px 20px 0 #04091b;
+                border-radius: 5px;
+    
+            }
+        }
+
+        
+        
+    }
+ 
+}

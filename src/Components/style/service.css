@@ -1,0 +1,77 @@
+.service-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.service-section a, .service-section a:hover, .service-section a:focus, .service-section a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-section-row {
+  display: flex;
+  height: auto;
+  padding: 10vh 0;
+  flex-direction: column;
+}
+
+.service-section-row-1 {
+  display: flex;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .service-section-row-1 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-section-row-1 {
+    padding: 10px 0;
+  }
+}
+
+.service-section-row-1-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #04091b;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  transition: all 1s;
+}
+
+@media (min-width: 992px) {
+  .service-section-row-1-col {
+    flex-grow: 1;
+  }
+}
+
+.service-section-row-1-col-img {
+  height: 40vh;
+  align-content: center;
+  width: 100%;
+  color: #f00946;
+  margin-bottom: 5px;
+}
+
+.service-section-row-1-col p, .service-section-row-1-col h2 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.service-section-row-1-col:hover {
+  border: 1px solid #f00946;
+  box-shadow: 0 4px 8px 0 #04091b, 0 6px 20px 0 #04091b;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=service.css.map */

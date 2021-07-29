@@ -1,0 +1,110 @@
+@import "../utils/settings";
+
+
+.why{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 20vh;
+
+
+    h2{
+        font-size:large;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 10vh 0;
+    }
+    
+    &-header{
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            font-size:large;
+            font-size: 1.5rem;
+        }
+    }
+
+    &-content{
+        height: auto;
+        background-image: url('/src/Components/images/art.jpg');
+        background-attachment: fixed;
+
+
+        &-row{
+            background: rgba(255,255,255, 0.7);
+            width: 80%;
+            margin: 80px auto;
+            padding: 20px 20px;
+            display: flex;
+            height: auto;
+            border-radius: 10px;
+
+            @include medium{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-col{
+                height: 70vh;
+                flex-grow: 1;
+                margin: 20px;
+                border: 1px solid rgb(37, 37, 37);
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px 0 #04091b, 0 3px 10px 0 #04091b;
+
+                @include medium{
+                    width: 100%;
+                    height: auto;
+                }
+
+                @include max-medium{
+                    height: auto;
+                }
+
+                img-span{
+                    width: 100%;
+                    height: 50%;
+                }
+
+                img{
+                    width: 100%;
+                    height: 40vh;
+                    border-radius: 10px;
+
+                    @include medium{
+                        height: 50vh;
+                    }
+
+                }
+
+                &-content{
+                    text-align: center;
+                    padding: 20px 20px;
+
+                    h3{
+                        color: $primary-color;
+                        padding-bottom: 10px;
+                    }
+
+                    p{
+
+                    }
+                }
+            }
+
+            
+            
+        }
+    }
+}

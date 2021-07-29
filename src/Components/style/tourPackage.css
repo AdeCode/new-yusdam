@@ -1,0 +1,90 @@
+.tour-package-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #04091b;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.tour-package-section-row {
+  display: flex;
+  height: auto;
+  margin: 20px 20px;
+  box-sizing: inherit;
+}
+
+@media (max-width: 768px) {
+  .tour-package-section-row {
+    flex-direction: column;
+  }
+}
+
+.tour-package-section-row-col {
+  height: auto;
+  border: 1px solid #d3cece;
+  margin: 0 5px;
+  box-sizing: inherit;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .tour-package-section-row-col {
+    width: calc(100%/3);
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-package-section-row-col {
+    flex-direction: column;
+    margin-bottom: 40px;
+    height: auto;
+  }
+}
+
+.tour-package-section-row-col-img-wrapper {
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tour-package-section-row-col-img-wrapper {
+    height: 50vh;
+  }
+}
+
+.tour-package-section-row-col-img-wrapper img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tour-package-section-row-col-content {
+  background-color: inherit;
+  color: #04091b;
+  box-sizing: inherit;
+  padding: 20px 20px;
+}
+
+.tour-package-section-row-col-content h3, .tour-package-section-row-col-content p, .tour-package-section-row-col-content price {
+  margin-bottom: 1.3vh;
+}
+
+.tour-package-section-row-col-content .bookButton {
+  margin: 5px 0;
+  background-color: #df053f;
+  color: inherit;
+  width: 30%;
+  padding: 5px;
+  box-sizing: inherit;
+}
+
+.tour-package-section-row-col-content .bookButton a, .tour-package-section-row-col-content .bookButton a:hover, .tour-package-section-row-col-content .bookButton a:active {
+  text-decoration: none;
+}
+/*# sourceMappingURL=tourPackage.css.map */

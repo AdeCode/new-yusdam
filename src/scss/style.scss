@@ -1,0 +1,17 @@
+@import './utils/settings';
+@import './shared/sectionHeader';
+@import './pages/service';
+@import './pages/tourPackage';
+@import './shared/footer';
+@import './pages/contact';
+@import './shared/copyright';
+@import './pages/homePage';
+@import './pages/about';
+@import './pages/why';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,83 @@
+@import '../utils/settings';
+
+.tour-package-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: $primary-color;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    &-row{
+        display: flex;
+        height: auto;
+        margin: 20px 20px;
+        box-sizing: inherit;
+
+        @include medium{
+            flex-direction: column;
+        }
+
+        &-col{
+            height: auto;
+            border: 1px solid #d3cece;
+            margin: 0 5px;
+            box-sizing: inherit;
+            border-radius: 10px;
+
+            @include large{
+                width: calc(100%/3);
+            }
+
+            @include medium{
+                flex-direction: column;
+                margin-bottom: 40px;
+                height: auto;
+            }
+
+            &-img-wrapper{
+                width: 100%;
+                height: 40vh;
+                border-radius: 10px;
+
+                @include medium{
+                    height: 50vh;
+                }
+
+                img{
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+            }
+
+            &-content{
+                background-color: inherit;
+                color: $primary-color;
+                box-sizing: inherit;
+                padding: 20px 20px;
+                
+                & h3,p,price{
+                    margin-bottom: 1.3vh;
+                }
+                
+                .bookButton{
+                    margin: 5px 0;
+                    background-color: #df053f;
+                    color: inherit;
+                    width: 30%;
+                    padding: 5px;
+                    box-sizing: inherit;
+
+                    a, a:hover, a:active{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

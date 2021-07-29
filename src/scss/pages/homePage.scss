@@ -1,0 +1,150 @@
+@import '../utils/settings';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.landing{
+    width: 100%;
+    height: auto;
+    background:#1c2237;
+
+    .slide{
+        width: 100%;
+        height: 100vh;
+        background-color: #1c2237;
+        color: black;
+        text-align: center;
+        position: relative;
+
+        .img{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            opacity: 0.6;
+        }
+
+        .message{
+            position: absolute;
+            color: $text-color;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0 20px;
+            width: 100%;
+
+
+            @include medium{
+                width: 100%;
+            }
+        }
+
+        .third{
+            position: absolute;
+            color: $text-color;
+            top: 40%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            padding: 0 20px;
+            width: auto;
+            text-align: left;
+
+            .thirdSlide{
+                padding: 10px;
+                width: auto;
+            }
+
+            h2{
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 1.1;
+                background-color: $secondary-color;
+                color: $text-color;
+                margin-bottom: 2vh;
+
+                @include medium{
+                    font-size: 4rem;
+                    line-height: 2;
+                }
+
+            }
+        }
+    
+    }
+    
+    .slick-next{
+        right: 20px;
+        display: none !important;
+    }
+    
+    .slick-prev{
+        left: 20px !important;
+    }
+
+    .slick-dots{
+        bottom: 30px;
+
+        li{
+            width: 15px;
+            height: 15px;
+
+            button{
+                background-color: $text-color;
+                border-radius: 50px;
+            }
+
+        }
+    }
+
+    .slide-header{
+        position: absolute !important;
+        top: '50%';
+        left: '50%';
+        transform: 'translate(-50%, -50%)';
+    }
+    
+    .slide h1{
+        font-weight: bold;
+        font-size: 8rem;
+        line-height: 1.1;
+
+        @include medium{
+            font-size: 4rem;
+            line-height: 2;
+        }
+
+    }
+}
+
+.order-btn{
+    margin: 20px;
+    width: 20vw;
+    height: 8vh;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+
+    @include medium{
+        width: auto;
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+}
+
+.order-btn:hover{
+    background-color: $text-color;
+    color: $secondary-color;
+
+    a{
+        color: $secondary-color;
+    }
+}
+
+
+

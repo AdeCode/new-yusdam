@@ -1,0 +1,66 @@
+$primary-color: #04091b;
+$secondary-color: #1c2237;
+$tertiary-color: #f00946;
+$accent-color: #C6DC55;
+$text-color: #ffffff;
+
+//breakpoints
+$small: (
+    max-width: 320px,
+);
+
+$medium: (
+    max-width: 768px,
+);
+
+$xmedium: (
+    min-width: 768,
+);
+
+$xmedium-max: (
+    max-width: 992px,
+);
+
+$large: (
+    min-width: 992px,
+);
+
+$xlarge: (
+    min-width: 1200px,
+);
+
+@mixin small {
+    @media #{$small} {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media #{$medium} {
+        @content;
+    }
+}
+
+@mixin min-medium {
+    @media #{$xmedium} {
+        @content;
+    }
+}
+
+@mixin max-medium {
+    @media #{$xmedium-max} {
+        @content;
+    }
+}
+
+@mixin large {
+    @media #{$large} {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media #{$xlarge} {
+        @content;
+    }
+}
