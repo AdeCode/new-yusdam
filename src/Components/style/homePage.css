@@ -54,6 +54,12 @@
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .landing .slide .third {
+    left: 35%;
+  }
+}
+
 .landing .slide .third .thirdSlide {
   padding: 10px;
   width: auto;
@@ -70,8 +76,8 @@
 
 @media (max-width: 768px) {
   .landing .slide .third h2 {
-    font-size: 4rem;
-    line-height: 2;
+    font-size: 1.5rem;
+    line-height: 1.0;
   }
 }
 
@@ -144,5 +150,11 @@
 
 .order-btn:hover a {
   color: #1c2237;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 500;
 }
 /*# sourceMappingURL=homePage.css.map */

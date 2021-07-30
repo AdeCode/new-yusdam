@@ -51,7 +51,7 @@ export default function Home() {
                     <img className="img" src='assets/images/pages/johnplane.jpg'/>
                     <div className="message">
                         <h1>Yusdam-Fly</h1>
-                        <h2>Travels and tours...</h2>
+                        <h2 className="subTitle">Travels and tours...</h2>
                         <button className="order-btn">
                             <Link to="/contact">Book Now</Link>
                         </button>
@@ -61,7 +61,7 @@ export default function Home() {
                     <img className="img" src='assets/images/pages/redd.jpg'/>
                     <div className="message">
                         <h1>Explore</h1>
-                        <h2>Explore the world with us</h2>
+                        <h2 className="subTitle">Explore the world with us</h2>
                        
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export default function Home() {
                     <img className="img" src='assets/images/pages/luna.jpg'/>
                     <div className="third">
                         <h2 className="thirdSlide">Your luxury trip starts here</h2>
-                        <h3>Explore the world with us</h3>                       
+                        <h3 className="subTitle">Explore the world with us</h3>                       
                     </div>
                 </div>
             </Slider>

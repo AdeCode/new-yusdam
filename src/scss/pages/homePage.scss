@@ -36,8 +36,7 @@
             transform: translate(-50%, -50%);
             padding: 0 20px;
             width: 100%;
-
-
+            
             @include medium{
                 width: 100%;
             }
@@ -53,6 +52,10 @@
             width: auto;
             text-align: left;
 
+            @include medium{
+                left: 35%;
+            }
+
             .thirdSlide{
                 padding: 10px;
                 width: auto;
@@ -65,10 +68,10 @@
                 background-color: $secondary-color;
                 color: $text-color;
                 margin-bottom: 2vh;
-
+                            
                 @include medium{
-                    font-size: 4rem;
-                    line-height: 2;
+                    font-size: 1.5rem;
+                    line-height: 1.0;
                 }
 
             }
@@ -146,5 +149,9 @@
     }
 }
 
-
+.subTitle{
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 500;
+}
 
