@@ -12,12 +12,13 @@ import {Link} from "react-router-dom"
 export default function Home() {
     const settings = {
         dots: true,
+        fade: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slideToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
         adaptiveHeight: true,
     };
 
