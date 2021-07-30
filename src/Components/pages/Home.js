@@ -16,7 +16,7 @@ export default function Home() {
         speed: 500,
         slideToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
     };
@@ -69,7 +69,7 @@ export default function Home() {
                     <img className="img" src='assets/images/pages/luna.jpg'/>
                     <div className="third">
                         <h2 className="thirdSlide">Your luxury trip starts here</h2>
-                        <h3 className="subTitle">Explore the world with us</h3>                       
+                        <h3 className="subTitle">Get started...</h3>                       
                     </div>
                 </div>
             </Slider>
