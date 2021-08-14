@@ -1,0 +1,163 @@
+@import '../utils/settings';
+
+.book{
+    width: 100%;
+
+    &-row{
+        display: flex;
+        border-radius: 10px;
+        margin: 20vh 10vh;
+        justify-content: center;
+
+        @include large{
+            flex-direction: row;
+        }
+
+        @include medium{
+            flex-direction: column;
+            margin: 10vh 3vh;
+
+        }
+
+        &-col{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            background-color: $secondary-color;
+
+
+            @include large{
+                width: calc(100%/2);
+
+            }
+            
+
+            & img{
+                width: 100%;
+                height: 550px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+                @include medium{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-top-right-radius: 10px;
+                    height: 400px;
+                }               
+            }        
+        }
+    }
+
+    
+}
+
+.inputRow{
+    display: flex;
+
+    @include medium{
+        flex-direction: column;
+    }
+
+    @include large{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    @include min-medium{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &-col{
+        margin-bottom: 20px !important;
+
+        @include small{
+            width: 100%;
+        }
+
+        @include large{
+            width: 48%;
+
+        }
+        
+
+        & input, textarea{
+            height: 60px;
+            width: 100%;     
+            font-size: 1.0rem;     
+            padding: 20px 20px;  
+            border:none;
+            border-radius: 5px;
+        }
+    
+        & label{
+            width: 100%;
+        }
+    }
+}
+
+form{
+    padding: 40px 40px;
+
+    @include medium{
+        padding: 20px 10px;
+    }
+}
+
+.inputGroup{
+    width: 100%;
+    margin-bottom: 20px;
+    
+    & input, textarea{
+        height: 60px;
+        width: 100%;     
+        font-size: 1.0rem;     
+        padding: 20px 20px;  
+        border:none;
+        border-radius: 5px;
+    }
+
+    & label{
+        width: 100%;
+    }
+}
+
+input[type=submit]{
+    background-color: $tertiary-color;
+    color: $text-color;
+    border:none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 300ms;
+}
+
+input[type=submit]:hover{
+    color: $primary-color;
+    background-color: $text-color;
+    transform: translate(-2px);
+}
+
+.textarea{
+    height: 200px;
+
+    & textarea{
+        height: 200px;
+    }
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid $primary-color;
+    box-shadow: 0 0 10px $tertiary-color;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid $primary-color;
+    box-shadow: 0 0 10px $tertiary-color;
+}
+
+

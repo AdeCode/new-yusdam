@@ -8,6 +8,8 @@ import Service from './Components/pages/Service'
 import Packages from './Components/pages/TourPackages'
 import About from './Components/pages/About'
 import Footer from './Components/shared/Footer'
+import Dubai from './Components/pages/packages/Dubai'
+import Book from './Components/shared/BookNow'
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
             <Route path='/contact' component={Contact} />         
             <Route path='/service' component={Service} />   
             <Route path='/package' component={Packages} /> 
-            <Route path='/about' component={About} />                               
+            <Route path='/about' component={About} />  
+            <Route path='/dubai' component={Dubai} />
+            <Route path='/booknow' component={Book} />
           </Switch>
         <Footer/>
       </Router>        
