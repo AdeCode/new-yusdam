@@ -81,14 +81,18 @@
 
 .tour-package-section-row-col-content .bookButton {
   margin: 5px 0;
-  background-color: #df053f;
+  background-color: #f00946;
   color: inherit;
-  width: 30%;
-  padding: 10px 5px;
+  width: fit-content;
+  padding: 10px 10px;
   box-sizing: inherit;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.tour-package-section-row-col-content .bookButton:hover {
+  background-color: #04091b;
 }
 
 .tour-package-section-row-col-content .bookButton a, .tour-package-section-row-col-content .bookButton a:hover, .tour-package-section-row-col-content .bookButton a:active {
