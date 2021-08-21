@@ -15,10 +15,15 @@
   }
 }
 
+.packageDetails-section h2 {
+  margin-top: 20px;
+}
+
 .packageDetails-section-title {
   font-size: 2rem;
   font-weight: bold;
   padding: 10px 0;
+  color: #1c2237;
 }
 
 .packageDetails-section-features {
@@ -44,6 +49,7 @@
 @media (max-width: 768px) {
   .packageDetails-section-btn {
     width: inherit;
+    text-align: center;
   }
 }
 
@@ -63,5 +69,127 @@
 
 .packageDetails-section-features .h2 {
   color: #ffffff;
+}
+
+.hajjPackage-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.hajjPackage-section h2 {
+  margin: 20px 0;
+}
+
+.hajjPackage-section-col {
+  width: 50%;
+}
+
+.hajjPackage-section-col ul {
+  padding: 10px 20px;
+}
+
+.hajjPackage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.hajj-content-col {
+  width: 100%;
+  padding: 10px 20px;
+  display: none;
+}
+
+.hajj-content-col-show {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.hajjPackage-sec {
+  width: 100%;
+  display: flex;
+}
+
+.hajjPackage-sec .tab-col {
+  width: calc(100%/2);
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.tab-container {
+  border: 1px solid #fff;
+  box-shadow: 0 4px 8px 0 #04091b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.tab-container .bloc-tabs {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.tab-container .tabs {
+  flex-grow: 1;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #04091b;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: details;
+}
+
+.tab-container .active-tabs {
+  border-top: 5px solid #f00946;
+  color: black;
+  background-color: inherit;
+}
+
+.tab-container .content-tabs {
+  flex-grow: 1;
+}
+
+.tab-container .content {
+  padding: 20px;
+  width: 100%;
+  display: none;
+}
+
+.tab-container .content ul li {
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+
+.tab-container .content-details {
+  font-weight: normal;
+}
+
+.tab-container .content-details h3 {
+  font-weight: normal;
+}
+
+.tab-container .active-content {
+  display: block;
+}
+
+.tab-container .content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.tab-container .content hr {
+  width: 100%;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+
+.tab-container .content p {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=packagedetails.css.map */

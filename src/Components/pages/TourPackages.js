@@ -28,16 +28,16 @@ export default function TravelPackage({country, price}) {
                         </a>                        
                     </div>
                     <div className="tour-package-section-row-col">
-                        <a href="/pilgrimage">
+                        <a href="/hajj">
                             <div className="tour-package-section-row-col-img-wrapper">
                                 <img 
                                     src="/assets/images/pages/adli.jpg" 
-                                    alt="Visit Dubai"
+                                    alt="Hajj Pilgrimage"
                                 />                            
                             </div>
                             <div className="tour-package-section-row-col-content">
                             <h3>Pilgrimage Tour</h3>
-                                <p>7 Days, 8 Nights start From</p>
+                                <p>Holy Pilgrimage to Makkah</p>
                                 <div className="bookButton">
                                     <a href="">Book Now</a>
                                 </div>                           
@@ -46,7 +46,7 @@ export default function TravelPackage({country, price}) {
                     </div>
 
                     <div className="tour-package-section-row-col">
-                        <a href="/#">
+                        <a href="/santorini">
                             <div className="tour-package-section-row-col-img-wrapper">
                                 <img 
                                     src="/assets/images/pages/santo.jpg" 
@@ -84,7 +84,7 @@ export default function TravelPackage({country, price}) {
                     </div>
 
                     <div className="tour-package-section-row-col">
-                        <a href="/#">
+                        <a href="/seychelles">
                             <div className="tour-package-section-row-col-img-wrapper">
                                 <img 
                                     src="/assets/images/pages/seych.jpg" 

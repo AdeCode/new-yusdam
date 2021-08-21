@@ -17,7 +17,8 @@
 
 @media (max-width: 768px) {
   .section {
-    height: 20vh;
+    height: auto;
+    padding: 20px;
   }
 }
 
@@ -181,6 +182,10 @@
   padding: 20px 20px;
 }
 
+.tour-package-section-row-col-content h3 {
+  text-transform: uppercase;
+}
+
 .tour-package-section-row-col-content h3, .tour-package-section-row-col-content p, .tour-package-section-row-col-content price {
   margin-bottom: 1.3vh;
 }
@@ -190,8 +195,11 @@
   background-color: #df053f;
   color: inherit;
   width: 30%;
-  padding: 5px;
+  padding: 10px 5px;
   box-sizing: inherit;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .tour-package-section-row-col-content .bookButton a, .tour-package-section-row-col-content .bookButton a:hover, .tour-package-section-row-col-content .bookButton a:active {
@@ -811,10 +819,15 @@ input:focus {
   }
 }
 
+.packageDetails-section h2 {
+  margin-top: 20px;
+}
+
 .packageDetails-section-title {
   font-size: 2rem;
   font-weight: bold;
   padding: 10px 0;
+  color: #1c2237;
 }
 
 .packageDetails-section-features {
@@ -840,6 +853,7 @@ input:focus {
 @media (max-width: 768px) {
   .packageDetails-section-btn {
     width: inherit;
+    text-align: center;
   }
 }
 
@@ -859,6 +873,128 @@ input:focus {
 
 .packageDetails-section-features .h2 {
   color: #ffffff;
+}
+
+.hajjPackage-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.hajjPackage-section h2 {
+  margin: 20px 0;
+}
+
+.hajjPackage-section-col {
+  width: 50%;
+}
+
+.hajjPackage-section-col ul {
+  padding: 10px 20px;
+}
+
+.hajjPackage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.hajj-content-col {
+  width: 100%;
+  padding: 10px 20px;
+  display: none;
+}
+
+.hajj-content-col-show {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.hajjPackage-sec {
+  width: 100%;
+  display: flex;
+}
+
+.hajjPackage-sec .tab-col {
+  width: calc(100%/2);
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.tab-container {
+  border: 1px solid #fff;
+  box-shadow: 0 4px 8px 0 #04091b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.tab-container .bloc-tabs {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.tab-container .tabs {
+  flex-grow: 1;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #04091b;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: details;
+}
+
+.tab-container .active-tabs {
+  border-top: 5px solid #f00946;
+  color: black;
+  background-color: inherit;
+}
+
+.tab-container .content-tabs {
+  flex-grow: 1;
+}
+
+.tab-container .content {
+  padding: 20px;
+  width: 100%;
+  display: none;
+}
+
+.tab-container .content ul li {
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+
+.tab-container .content-details {
+  font-weight: normal;
+}
+
+.tab-container .content-details h3 {
+  font-weight: normal;
+}
+
+.tab-container .active-content {
+  display: block;
+}
+
+.tab-container .content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.tab-container .content hr {
+  width: 100%;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+
+.tab-container .content p {
+  width: 100%;
+  height: 100%;
 }
 
 .book {
@@ -1034,15 +1170,76 @@ input:focus {
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 60%;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 101;
+  padding: 10px 40px;
+}
+
+.modal-box h1, .modal-box p {
+  text-align: center;
+}
+
+.form-container {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #04091b;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-close {
+  position: relative;
+  top: 5%;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  left: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Brush script MT", cursive;
+  font-family: "Brush script MT", "Didot", "Georgia", Times, serif;
 }
 
 @media (max-width: 768px) {
   * {
-    font-family: 'Brush Script MT', cursive !important;
+    font-family: "Didot", "Georgia", cursive !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

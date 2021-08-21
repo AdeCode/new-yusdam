@@ -71,6 +71,10 @@
   padding: 20px 20px;
 }
 
+.tour-package-section-row-col-content h3 {
+  text-transform: uppercase;
+}
+
 .tour-package-section-row-col-content h3, .tour-package-section-row-col-content p, .tour-package-section-row-col-content price {
   margin-bottom: 1.3vh;
 }
@@ -80,8 +84,11 @@
   background-color: #df053f;
   color: inherit;
   width: 30%;
-  padding: 5px;
+  padding: 10px 5px;
   box-sizing: inherit;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .tour-package-section-row-col-content .bookButton a, .tour-package-section-row-col-content .bookButton a:hover, .tour-package-section-row-col-content .bookButton a:active {

@@ -17,7 +17,8 @@
     background-attachment: fixed;
 
     @include medium{
-        height: 20vh;
+        height: auto;
+        padding: 20px;
     }
     
     &-title{

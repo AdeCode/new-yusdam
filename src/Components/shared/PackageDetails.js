@@ -3,7 +3,7 @@ import React from 'react'
 export default function PackageDetails({image, features, price, content, url}) {
     
     const contentArray = content.split('(b)');
-    console.log(contentArray);
+    //console.log(contentArray);
 
     return (
         <div className="packageDetails-section">
@@ -22,9 +22,7 @@ export default function PackageDetails({image, features, price, content, url}) {
             <div className="packageDetails-section-title">Description </div>
                 {contentArray}
             </div>
-            <div className="packageDetails-section-btn">
-                <a href={url}>Book Now</a>
-            </div>
+            
         </div>
     );
 }

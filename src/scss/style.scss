@@ -10,16 +10,17 @@
 @import './pages/why';
 @import './shared/packagedetails';
 @import './shared/book.scss';
+@import './shared/modal.scss';
 
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Brush script MT", cursive;
+    font-family: "Brush script MT", "Didot", "Georgia", Times, serif;
 
     @include medium{
-        font-family: 'Brush Script MT', cursive !important;
+        font-family: "Didot", "Georgia", cursive !important;
 
     }
 }
