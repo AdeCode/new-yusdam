@@ -1,13 +1,13 @@
 .section {
   width: 100%;
-  height: 40vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
   color: #ffffff;
-  padding: 20px 20px;
+  padding: 40px 20px;
   margin-bottom: 50px;
   text-align: center;
   background-image: url("/src/Components/images/marcus-medium.jpg");
@@ -18,7 +18,7 @@
 @media (max-width: 768px) {
   .section {
     height: auto;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -26,6 +26,12 @@
   font-size: 2.5rem;
   font-weight: bold;
   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
 
 .section-subTitle {
@@ -854,6 +860,7 @@ input:focus {
   .packageDetails-section-btn {
     width: inherit;
     text-align: center;
+    margin: 20px auto;
   }
 }
 
@@ -865,6 +872,12 @@ input:focus {
 .packageDetails-section-image {
   width: 100%;
   height: 400px;
+}
+
+@media (max-width: 768px) {
+  .packageDetails-section-image {
+    height: 300px;
+  }
 }
 
 .packageDetails-section-image img {
@@ -1207,6 +1220,14 @@ input:focus {
   padding: 10px 40px;
 }
 
+@media (max-width: 768px) {
+  .modal-box {
+    top: 60%;
+    padding: 10px;
+    width: 80%;
+  }
+}
+
 .modal-box h1, .modal-box p {
   text-align: center;
 }
@@ -1219,6 +1240,12 @@ input:focus {
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .form-container {
+    width: 97%;
+  }
+}
+
 .btn-close {
   position: relative;
   top: 5%;
@@ -1228,6 +1255,31 @@ input:focus {
   left: 100%;
   text-align: center;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .btn-close {
+    left: 90%;
+  }
+}
+
+.chatUs-container {
+  background-color: #f00946;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.chatUs-container:hover {
+  background-color: #04091b;
+}
+
+.chatUs-container-logo {
+  color: #04091b;
+  position: relative;
+  top: 50%;
 }
 
 * {

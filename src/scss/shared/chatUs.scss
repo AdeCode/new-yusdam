@@ -1,0 +1,20 @@
+@import "../utils/settings";
+
+.chatUs-container{
+    background-color: $tertiary-color;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    border-radius: 50px;
+    text-align: center;
+
+    &:hover{
+        background-color: $primary-color;
+    }
+
+    &-logo{
+        color: $primary-color;
+        position: relative;
+        top: 50%;
+    }
+}

@@ -1,0 +1,19 @@
+.chatUs-container {
+  background-color: #f00946;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.chatUs-container:hover {
+  background-color: #04091b;
+}
+
+.chatUs-container-logo {
+  color: #04091b;
+  position: relative;
+  top: 50%;
+}
+/*# sourceMappingURL=chatUs.css.map */

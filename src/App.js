@@ -13,12 +13,14 @@ import Hajj from './Components/pages/packages/Hajj'
 import Santorini from './Components/pages/packages/Santorini'
 import Seychelles from './Components/pages/packages/Seychelles'
 import Book from './Components/shared/BookNow'
+import ChatUs from './Components/shared/ChatUs'
 
 
 
 function App() {
   return (
       <Router>
+        <ChatUs />
         <Navbar />
           <Switch>
             <Route path='/' exact component={Home} />

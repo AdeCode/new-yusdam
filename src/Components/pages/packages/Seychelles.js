@@ -81,7 +81,7 @@ export default function Seychelles() {
     return (
         <div>
             <SectionHeader 
-                title = 'SEYCHELLES TOUR PACKAGE'
+                title = 'VISIT SEYCHELLES'
                 subtitle = 'Experience Seychelles'
             />
             <PackageDetails 

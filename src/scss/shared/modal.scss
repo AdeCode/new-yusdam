@@ -37,6 +37,12 @@
     z-index: 101;
     padding: 10px 40px;
 
+    @include medium{
+        top: 60%;
+        padding: 10px;
+        width: 80%;
+    }
+
     h1,p{
         text-align: center;
     }
@@ -49,6 +55,10 @@
     height: auto;
     border-radius: 10px;
 
+    @include medium{
+        width: 97%;
+
+    }
 }
 
 .btn-close{
@@ -60,4 +70,8 @@
     left: 100%;
     text-align: center;
     cursor:pointer;    
+
+    @include medium{
+        left: 90%;
+    }
 }

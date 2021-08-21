@@ -36,6 +36,14 @@
   padding: 10px 40px;
 }
 
+@media (max-width: 768px) {
+  .modal-box {
+    top: 60%;
+    padding: 10px;
+    width: 80%;
+  }
+}
+
 .modal-box h1, .modal-box p {
   text-align: center;
 }
@@ -48,6 +56,12 @@
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .form-container {
+    width: 97%;
+  }
+}
+
 .btn-close {
   position: relative;
   top: 5%;
@@ -57,5 +71,11 @@
   left: 100%;
   text-align: center;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .btn-close {
+    left: 90%;
+  }
 }
 /*# sourceMappingURL=modal.css.map */

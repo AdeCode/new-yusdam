@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAA;EACb,gBAAgB,ECDH,OAAO;EDEpB,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,EAAE;EACT,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;CAWrB;;AAjBD,AAQI,iBARa,AAQZ,MAAM,CAAA;EACH,gBAAgB,ECXR,OAAO;CDYlB;;AAEA,AAAD,sBAAM,CAAA;EACF,KAAK,ECfG,OAAO;EDgBf,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;CACX",
+    "sources": [
+        "../../scss/shared/chatUs.scss",
+        "../../scss/utils/_settings.scss"
+    ],
+    "names": [],
+    "file": "chatUs.css"
+}
