@@ -1,11 +1,23 @@
-import React, { forwardRef } from 'react'
+import React, { useRef, forwardRef } from 'react'
 import SectionHeader from '../../shared/SectionHeader';
 import PackageDetails from '../../shared/PackageDetails';
+import Modal from '../../shared/Modal';
+import BookNow from '../../shared/BookNow';
 
 export default function Dubai() {
 
-    
+    const modalRef = useRef();
 
+    const openModal = () => {
+        modalRef.current.openModal();
+    };
+    
+    const closeModal = () => {
+        modalRef.current.close();
+    };
+    
+    const location = {location: 'Santorini'};
+    
     return (
         <div>
             <SectionHeader 
@@ -36,11 +48,17 @@ export default function Dubai() {
 
                 url='/booknow'
             />
-            <div className="packageDetails-section">
-                <div className="packageDetails-section-btn">
-                    <a href="#">Book Now</a>
-                </div>
-            </div>            
+            <div className="packageDetails-section">                
+                <button onClick={openModal} className="packageDetails-section-btn">Book Now</button>                
+                <Modal ref={modalRef}>
+                    <div className="btn-close" onClick={closeModal}>X</div>
+                    <h1>Booking Form</h1>
+                    <p>Fill all the fields here</p>
+                    <BookNow 
+                        location={location}
+                    />                                                
+                </Modal>
+            </div>         
         </div>
     )
 }

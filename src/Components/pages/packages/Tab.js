@@ -1,12 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import Modal from '../../shared/Modal';
+import BookNow from '../../shared/BookNow'
+
 
 export default function Tab(tabTitle) {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
         setToggleState(index);
-        console.log(toggleState);
     }
+
+    const modalRef = useRef();
+
+    const openModal = () => {
+        //evt.preventDefault();
+        modalRef.current.openModal();
+    };
+    
+    const closeModal = () => {
+        modalRef.current.close();
+    };
+
+    const location = {
+        location: 'Hajj',
+    };
 
     return (
         <div className="tab-container">
@@ -38,8 +55,16 @@ export default function Tab(tabTitle) {
                             <li>Airport Protocol both in Nigeria and Saudi Arabia</li>
                         </ul>
                     </p>
-                    <div className="packageDetails-section-btn">
-                        <a href="#">Book Now</a>
+                    <div className="packageDetails-section">                
+                        <button onClick={openModal} className="packageDetails-section-btn">Book Now</button>                
+                        <Modal ref={modalRef}>
+                            <div className="btn-close" onClick={closeModal}>X</div>
+                            <h1>Booking Form</h1>
+                            <p>Fill all the fields here</p>
+                            <BookNow 
+                                location={location}
+                            />                                                
+                        </Modal>
                     </div>
                 </div>
 
@@ -62,8 +87,16 @@ export default function Tab(tabTitle) {
                             <li>Airport Protocol both in Nigeria and Saudi Arabia</li>
                         </ul>
                     </p>
-                    <div className="packageDetails-section-btn">
-                        <a href="#">Book Now</a>
+                    <div className="packageDetails-section">                
+                        <button onClick={openModal} className="packageDetails-section-btn">Book Now</button>                
+                        <Modal ref={modalRef}>
+                            <div className="btn-close" onClick={closeModal}>X</div>
+                            <h1>Booking Form</h1>
+                            <p>Fill all the fields here</p>
+                            <BookNow 
+                                location={location}
+                            />                                                
+                        </Modal>
                     </div>
                 </div>                                
             </div>

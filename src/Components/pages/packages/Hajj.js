@@ -5,17 +5,11 @@ import Tab from '../packages/Tab';
 
 export default function Dubai() {
 
-    const [click, setClick] = useState('false');
-    const [key, setKey] = useState('left');
-       
-    function handleClick(e){
-        e.preventDefault();
-        setClick(!click);
-        //console.log('You clicked me');
-    }
-
-    const types = ['left', 'center','right'];
-    const [active, setActive] = useState(types[0]);
+    // const [click, setClick] = useState('false');
+    // const [key, setKey] = useState('left');
+           
+    // const types = ['left', 'center','right'];
+    // const [active, setActive] = useState(types[0]);
 
     return (
         <div>

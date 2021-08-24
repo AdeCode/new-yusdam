@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import SectionHeader from '../shared/SectionHeader';
 import {FaSubway, FaBars, FaCanadianMapleLeaf, FaBtc, FaEnvira} from 'react-icons/fa';
 import { BiHotel } from "react-icons/bi";
@@ -7,7 +7,9 @@ import {AiFillCar} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 
+
 export default function Service() {
+    
     return (
         <div className="service-section">
             <SectionHeader 
@@ -52,8 +54,7 @@ export default function Service() {
                         <p>Safe and Secure.  Book confidently and save on our low fare promise.</p>
                     </div>
                 </div>                              
-            </div>
-           
+            </div>                       
         </div>
     )
 }

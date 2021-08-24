@@ -14,6 +14,7 @@ import Santorini from './Components/pages/packages/Santorini'
 import Seychelles from './Components/pages/packages/Seychelles'
 import Book from './Components/shared/BookNow'
 import ChatUs from './Components/shared/ChatUs'
+import DubaiResidency from './Components/pages/packages/DubaiResidency';
 
 
 
@@ -33,6 +34,7 @@ function App() {
             <Route path='/booknow' component={Book} />
             <Route path='/santorini' component={Santorini} />
             <Route path='/seychelles' component={Seychelles} />
+            <Route path='/dubai-2-years' component={DubaiResidency} />
           </Switch>
         <Footer/>
       </Router>        

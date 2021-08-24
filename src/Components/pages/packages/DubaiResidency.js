@@ -4,7 +4,7 @@ import PackageDetails from '../../shared/PackageDetails';
 import Modal from '../../shared/Modal';
 import BookNow from '../../shared/BookNow';
 
-export default function Dubai() {
+export default function DubaiResidency() {
 
     const modalRef = useRef();
 
@@ -18,15 +18,16 @@ export default function Dubai() {
     
     const location = {location: 'Dubai'};
 
+    const UsePackage = { package: 'Dubai 2 years residency'}
+
     return (
         <div>
             <SectionHeader 
-                title = 'DUBAI TOUR PACKAGE'
+                title = 'DUBAI 2 years residency'
                 subtitle = 'Our special and pocket friendly packages'
             />
+    
             <PackageDetails>
-                <div>
-
                 <div className="packageDetails-section-image">
                     <img src="/assets/images/pages/seych.jpg" alt="" />
                 </div>
@@ -60,10 +61,8 @@ export default function Dubai() {
                         perfect man-made touch is perfectly valid. Let’s know this city and 
                         know our City Tour in Dubai has in the Store for you.
                         </p>
-                    </div>
                 </div>
             </PackageDetails>
-            
             <div className="packageDetails-section">                
                 <button onClick={openModal} className="packageDetails-section-btn">Book Now</button>                
                     <Modal ref={modalRef}>
@@ -74,7 +73,7 @@ export default function Dubai() {
                             location={location}
                         />                                                
                     </Modal>
-            </div>                    
+            </div>     
         </div>
     )
 }

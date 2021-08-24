@@ -95,14 +95,14 @@ export default function TravelPackage({country, price}) {
                                 <h3>VISIT SEYCHELLES</h3>
                                 <p>2 &amp; 3 years residency Visa</p>
                                 <div className="bookButton">
-                                    <a href="">Book Now</a>
+                                    <a href="/seychelles">Book Now</a>
                                 </div>
                             </div>
                         </a>                        
                     </div>
 
                     <div className="tour-package-section-row-col">
-                        <a href="/#">
+                        <a href="/dubai-2-years">
                             <div className="tour-package-section-row-col-img-wrapper">
                                 <img 
                                     src="/assets/images/pages/erik.jpg" 

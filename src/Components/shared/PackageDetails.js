@@ -1,13 +1,14 @@
 import React from 'react'
-
-export default function PackageDetails({image, features, price, content, url}) {
+//{image, features, price, content, url}
+export default function PackageDetails(props) {
     
-    const contentArray = content.split('(b)');
+    //const contentArray = content.split('(b)');
     //console.log(contentArray);
 
     return (
         <div className="packageDetails-section">
-            <div className="packageDetails-section-image">
+            {props.children}
+            {/* <div className="packageDetails-section-image">
                 <img src={image} alt="" />
             </div>
             <div className="packageDetails-section-features">
@@ -18,11 +19,10 @@ export default function PackageDetails({image, features, price, content, url}) {
                 <div className="packageDetails-section-title">Price: </div>
                 {price}
             </div> */}
-            <div className="packageDetails-section-content">
+            {/* <div className="packageDetails-section-content">
             <div className="packageDetails-section-title">Description </div>
                 {contentArray}
-            </div>
-            
+            </div> */} 
         </div>
     );
 }

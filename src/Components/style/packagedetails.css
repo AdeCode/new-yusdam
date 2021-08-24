@@ -44,6 +44,8 @@
   text-decoration: none;
   width: fit-content;
   border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
@@ -148,13 +150,18 @@
   background-color: #04091b;
   text-align: center;
   font-size: 1.1em;
-  font-weight: details;
+  font-weight: bold;
+}
+
+.tab-container .tabs:hover {
+  cursor: pointer;
 }
 
 .tab-container .active-tabs {
   border-top: 5px solid #f00946;
   color: black;
   background-color: inherit;
+  cursor: grab;
 }
 
 .tab-container .content-tabs {

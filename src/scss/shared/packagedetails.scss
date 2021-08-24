@@ -43,6 +43,8 @@
         text-decoration: none;
         width:fit-content;
         border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
 
         @include medium{
             width: inherit;
@@ -66,7 +68,7 @@
         @include medium{
             height: 300px;
         }
-        
+
         img{
             height: 100%;
         }
@@ -151,13 +153,18 @@
         background-color: $primary-color;
         text-align: center;
         font-size: 1.1em;
-        font-weight: details;
+        font-weight: bold;
+
+        &:hover{
+            cursor:pointer;
+        }
     }
 
     .active-tabs{
         border-top: 5px solid #f00946;
         color: $secondary-text;
         background-color: inherit;
+        cursor:grab;
     }
 
     .content-tabs{
@@ -174,6 +181,8 @@
                 line-height:1.5rem;
             }
         }
+
+        
     }
 
     .content-details{

@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import SectionHeader from '../shared/SectionHeader';
 import { useInput } from '../mini-components/useInput';
 import {send} from 'emailjs-com';
 
 
-export default function BookNow() {
-   
+export default function BookNow(props) {
+
+
+    const useLocation = props.location;
+    const usePackage = props.package;
+    //const [useLocation, setUseLocation] = useState();
+    
     const {value:firstName, bind: bindFirstName, reset:resetFirstName} = useInput('');
     const {value:lastName, bind: bindLastName, reset:resetLastName} = useInput('');
     const {value:email, bind: bindEmail, reset:resetEmail} = useInput('');
@@ -22,7 +27,11 @@ export default function BookNow() {
         phone_no: phone_no,
         dateOfBooking: dateOfBooking,
         noOfPeople: noOfPeople,
+        location: useLocation.location,
+        //package: usePackage.package,
     };
+
+    
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -41,6 +50,8 @@ export default function BookNow() {
             setErrorMessage('Number of people field is required')
         }
         //alert(`Submitting firstname: ${firstName} ${lastName} ${email} ${message}`);
+        console.log(`Submitting firstname: ${firstName} ${lastName} ${email} ${phone_no} ${dateOfBooking} ${noOfPeople} ${useLocation.location}`);
+
         resetFirstName();
         resetLastName();
         resetEmail();
@@ -64,71 +75,63 @@ export default function BookNow() {
 
     }
 
+    
     return (
-       <section clasName="book">
-           <SectionHeader 
-                title = 'BOOK NOW'
-                subtitle = 'Please fill all the fields'
-           />
-           <div className="book-row">
-               
-               <div className="book-row-col book-col">
-                   <form onSubmit={handleSubmit}>
-                       <div className="inputRow">
-                           <div className="inputRow-col">
-                            <label>                               
-                                <input 
-                                    type="text" 
-                                    placeholder="First Name"                                    ﻿
-                                    {...bindFirstName}
-                                    required/>
-                            </label>
-                           </div>
-                           <div className="inputRow-col">
-                            <label>                                
-                                <input type="text" placeholder="Last Name" 
-                                {...bindLastName}
-                                />
-                            </label>
-                           </div>
-                       </div>
-                        <div className="inputGroup">
-                            <label>                                
-                                <input type="email" placeholder="Email" 
-                                {...bindEmail} required/>
-                            </label>
-                        </div>
-                        
-                        <div className="inputGroup">
-                            <label>                                
-                                <input type="number" placeholder="Phone Number" 
-                                {...bindphone_no} required/>
-                            </label>
-                        </div>
-
-                        <div className="inputGroup">
-                            <label>                                
-                                <input type="date" placeholder="Email" 
-                                {...binddateOfBooking} required/>
-                            </label>
-                        </div>
-
-                        <div className="inputGroup">
-                            <label>                                
-                                <input type="number" placeholder="Number of people" 
-                                {...bindnoOfPeople} required/>
-                            </label>
-                        </div>
-                        
-                        <div className="inputGroup ">
-                            <input type="submit" value="submit" 
+              
+        <div className="form-container">
+            <form onSubmit={handleSubmit}>
+               <div className="inputRow">
+                   <div className="inputRow-col">
+                    <label>                               
+                        <input 
+                            type="text" 
+                            placeholder="First Name"                                    ﻿
+                            {...bindFirstName}
                             required/>
-                        </div>     
-                        <div className="error">{errorMessage}</div>
-                   </form>
+                    </label>
+                   </div>
+                   <div className="inputRow-col">
+                    <label>                                
+                        <input type="text" placeholder="Last Name" 
+                        {...bindLastName}
+                        />
+                    </label>
+                   </div>
                </div>
-           </div>
+                <div className="inputGroup">
+                    <label>                                
+                        <input type="email" placeholder="Email" 
+                        {...bindEmail} required/>
+                    </label>
+                </div>
+                
+                <div className="inputGroup">
+                    <label>                                
+                        <input type="number" placeholder="Phone Number" 
+                        {...bindphone_no} required/>
+                    </label>
+                </div>
 
-       </section>
+                <div className="inputGroup">
+                    <label>                                
+                        <input type="date" placeholder="Email" 
+                        {...binddateOfBooking} required/>
+                    </label>
+                </div>
+
+                <div className="inputGroup">
+                    <label>                                
+                        <input type="number" placeholder="Number of people" 
+                        {...bindnoOfPeople} required/>
+                    </label>
+                </div>
+                
+                <div className="inputGroup ">
+                    <input type="submit" value="submit" 
+                     required/>
+                </div>     
+                <div className="error">{errorMessage}</div>
+            </form>
+        </div>                
     )
 }
