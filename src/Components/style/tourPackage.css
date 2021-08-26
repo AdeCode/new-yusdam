@@ -19,6 +19,7 @@
 @media (max-width: 768px) {
   .tour-package-section-row {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 }
 

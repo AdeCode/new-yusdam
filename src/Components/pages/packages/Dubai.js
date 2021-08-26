@@ -25,19 +25,12 @@ export default function Dubai() {
                 subtitle = 'Our special and pocket friendly packages'
             />
             <PackageDetails>
-                <div>
+            <div>
 
                 <div className="packageDetails-section-image">
                     <img src="/assets/images/pages/seych.jpg" alt="" />
                 </div>
-                <div className="packageDetails-section-features">
-                    <div className="packageDetails-section-title">Features </div>
-                    <p>One week visitation</p>
-                </div>
-                <div className="packageDetails-section-price">
-                    <div className="packageDetails-section-title">Price: </div>
-                    
-                </div> 
+               
                 <div className="packageDetails-section-content">
                     <div className="packageDetails-section-title">Description </div>
                         <p>
@@ -60,8 +53,18 @@ export default function Dubai() {
                         perfect man-made touch is perfectly valid. Let’s know this city and 
                         know our City Tour in Dubai has in the Store for you.
                         </p>
-                    </div>
+
+                    <div className="packageDetails-section-title">Package Inclusions </div>                        
+                        <p className="packageDetails-section-title-details">
+                            <ul>
+                                <li>Visa Processing</li>
+                                <li>Residency Application</li>
+                                <li>Ticketing</li>
+                                <li>Tour Guide</li>
+                            </ul>
+                        </p> 
                 </div>
+            </div>
             </PackageDetails>
             
             <div className="packageDetails-section">                

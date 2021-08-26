@@ -26,53 +26,52 @@ export default function Seychelles() {
                 title = 'VISIT SEYCHELLES'
                 subtitle = 'Experience Seychelles'
             />
-            <PackageDetails>
+            <PackageDetails>            
                 <div>
+                    <div className="packageDetails-section-image">
+                        <img src="/assets/images/pages/seych.jpg" alt="" />
+                    </div>
+                
+                    <div className="packageDetails-section-content">
+                        <div className="packageDetails-section-title">Description </div>
+                            <p>
+                                With all the exquisite attractions and activities 
+                                the glorious country has to offer, we are your stepping 
+                                stone to making sure that you get the holiday experience 
+                                of a lifetime. We offer services varying from guided tours, 
+                                to exclusive activities at sea. Tours and Excursion 
+                                Seychelles is your solution to a stress free vacation. 
+                                We aim to bring services at your doorstep. Our motto is 
+                                simple.
+                            </p>
 
-                <div className="packageDetails-section-image">
-                    <img src="/assets/images/pages/seych.jpg" alt="" />
-                </div>
-                <div className="packageDetails-section-features">
-                    <div className="packageDetails-section-title">Features </div>
-                    <p>One week visitation</p>
-                </div>
-                <div className="packageDetails-section-price">
-                    <div className="packageDetails-section-title">Price: </div>
-                    
-                </div> 
-                <div className="packageDetails-section-content">
-                <div className="packageDetails-section-title">Description </div>
-                <p>
-                    With all the exquisite attractions and activities 
-                    the glorious country has to offer, we are your stepping 
-                    stone to making sure that you get the holiday experience 
-                    of a lifetime. We offer services varying from guided tours, 
-                    to exclusive activities at sea. Tours and Excursion 
-                    Seychelles is your solution to a stress free vacation. 
-                    We aim to bring services at your doorstep. Our motto is 
-                    simple.
-                </p>
-            </div>
-
-
+                        <div className="packageDetails-section-title">Package Inclusions </div>                        
+                            <p className="packageDetails-section-title-details">
+                                <ul>
+                                    <li>Visa Processing</li>
+                                    <li>Residency Application</li>
+                                    <li>Ticketing</li>
+                                    <li>Airport Pick-up and Drop-off</li>
+                                    <li>Accommodation</li>
+                                </ul>
+                            </p> 
+                    </div>
                 </div>
             </PackageDetails>
                
                 
             
-            <div className="packageDetails-section">
-                <div className="packageDetails-section-btn">
-                <button onClick={openModal}>Book Now</button>
-                    <Modal ref={modalRef}>
-                        <div className="btn-close" onClick={closeModal}>X</div>
-                        <h1>Booking Form</h1>
-                        <p>Fill all the fields here</p>
-                            <BookNow 
-                                location={location}
-                            />                                                
-                    </Modal>
-                </div>
-            </div>            
+            <div className="packageDetails-section">                
+                <button onClick={openModal} className="packageDetails-section-btn">Book Now</button>                
+                <Modal ref={modalRef}>
+                    <div className="btn-close" onClick={closeModal}>X</div>
+                    <h1>Booking Form</h1>
+                    <p>Fill all the fields here</p>
+                    <BookNow 
+                        location={location}
+                    />                                                
+                </Modal>
+            </div>          
         </div>
     )
 }

@@ -16,34 +16,23 @@ export default function DubaiResidency() {
         modalRef.current.close();
     };
     
-    const location = {location: 'Dubai'};
+    const location = {location: 'Canada'};
 
-    const UsePackage = { package: 'Dubai 2 years residency'}
+    const UsePackage = { package: 'Canada Visa'}
 
     return (
         <div>
             <SectionHeader 
-                title = 'DUBAI 2 years residency'
-                subtitle = 'Our special and pocket friendly packages'
+                title = 'CANADA VISA'
+                subtitle = 'Live and work in Canada'
             />
     
             <PackageDetails>
                 <div className="packageDetails-section-image">
-                    <img src="/assets/images/pages/sylvia.jpg" alt="" />
+                    <img src="/assets/images/pages/jason.jpg" alt="canada-visa" />
                 </div>
                 
-                <div className="packageDetails-section-content">
-                <div className="packageDetails-section-title">Package Inclusions </div>                        
-                   <p className="packageDetails-section-title-details">
-                   <ul>
-                        <li>Visa Processing</li>
-                        <li>Residency Application</li>
-                        <li>Ticketing</li>
-                    </ul>
-                    </p> 
-                    
-                        
-
+                <div className="packageDetails-section-content">                                                            
                     <div className="packageDetails-section-title">Description </div>
                         <p>
                         Dubai is a land of miracle, beautiful nature, and Man-made
@@ -65,6 +54,17 @@ export default function DubaiResidency() {
                         perfect man-made touch is perfectly valid. Let’s know this city and 
                         know our City Tour in Dubai has in the Store for you.
                         </p>
+
+                    <div className="packageDetails-section-title">Package Inclusions </div>                        
+                        <p className="packageDetails-section-title-details">
+                            <ul>
+                                <li>Visa Processing</li>
+                                <li>Residency Application</li>
+                                <li>Ticketing</li>
+                                <li>Airport Pick-up and Drop-off</li>
+                                <li>Accommodation</li>
+                            </ul>
+                        </p> 
                 </div>
             </PackageDetails>
             <div className="packageDetails-section">                

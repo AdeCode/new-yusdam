@@ -15,6 +15,10 @@ import Seychelles from './Components/pages/packages/Seychelles'
 import Book from './Components/shared/BookNow'
 import ChatUs from './Components/shared/ChatUs'
 import DubaiResidency from './Components/pages/packages/DubaiResidency';
+import Canada from './Components/pages/packages/CanadaVisa';
+import Brazil from './Components/pages/packages/Brazil';
+import CanadaStudy from './Components/pages/packages/CanadaStudy';
+import Zanzibar from './Components/pages/packages/Zanzibar';
 
 
 
@@ -35,6 +39,10 @@ function App() {
             <Route path='/santorini' component={Santorini} />
             <Route path='/seychelles' component={Seychelles} />
             <Route path='/dubai-2-years' component={DubaiResidency} />
+            <Route path='/canada-visa' component={Canada} />
+            <Route path='/brazil-carnival' component={Brazil} />
+            <Route path='/canada-study' component={CanadaStudy} />
+            <Route path='/zanzibar' component={Zanzibar} />
           </Switch>
         <Footer/>
       </Router>        
