@@ -16,9 +16,9 @@ export default function Zanzibar() {
         modalRef.current.close();
     };
     
-    const location = {location: 'Canada'};
+    const location = {location: 'Zanzibar'};
 
-    const UsePackage = { package: 'Study in Canada'}
+    const UsePackage = { package: 'Zanzibar Tour'}
 
     return (
         <div>

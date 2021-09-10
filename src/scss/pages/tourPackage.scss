@@ -72,7 +72,7 @@
                 
                 .bookButton{
                     margin: 5px 0;
-                    background-color: $tertiary-color;
+                    background-color: $primary-color;
                     color: inherit;
                     width: fit-content;
                     padding: 10px 10px;
@@ -82,7 +82,7 @@
                     font-weight: bold;
 
                     &:hover{
-                        background-color: $primary-color;
+                        background-color: $tertiary-color;
                     }
                    
                     a, a:hover, a:active{

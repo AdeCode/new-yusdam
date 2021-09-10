@@ -18,7 +18,7 @@ export default function DubaiResidency() {
     
     const location = {location: 'Dubai'};
 
-    const UsePackage = { package: 'Dubai 2 years residency'}
+    const UsePackage = { package: 'Dubai Residency'}
 
     return (
         <div>
