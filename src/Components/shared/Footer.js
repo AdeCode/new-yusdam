@@ -61,8 +61,7 @@ export default function Footer() {
                     <ul>
                         <li>
                             <HiLocationMarker size={16}/> 
-                            <span>Irepodun Local Government Shopping Complex, 
-                                Block A4 Shop Number 14, Behind Saki Garage, Sango, Ibadan.</span>
+                            <span>No 14, Basorun ultra modern shopping mall, Winners road, Basorun, Ibadan.</span>
                         </li>
                         <li>
                             <HiOutlinePhone size={16}/> 
