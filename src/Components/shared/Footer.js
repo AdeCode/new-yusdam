@@ -37,7 +37,7 @@ export default function Footer() {
                         <li>
                             <HiChevronDoubleRight/> 
                             <span>
-                                <Link to='/service'>Our Servic</Link>
+                                <Link to='/service'>Our Services</Link>
                             </span>
                         </li>
                         <li>
