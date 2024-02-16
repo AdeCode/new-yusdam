@@ -61,7 +61,9 @@ export default function Footer() {
                     <ul>
                         <li>
                             <HiLocationMarker size={16}/> 
-                            <span>No 14, Basorun ultra-modern shopping mall, Winners Road, Basorun.</span>
+                            <span>
+                            No 23, Islamic shopping plaza, Winners Chapel Road, Bashorun Ibadan.
+                            </span>
                         </li>
                         <li>
                             <HiOutlinePhone size={16}/> 
